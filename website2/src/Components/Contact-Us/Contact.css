@@ -1,0 +1,185 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FBFBFB;
+}
+  
+.contact {
+    flex: 1 1 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+  
+.contact .info {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+}
+  
+.contact .info br {
+    margin-bottom: 10px;
+}
+  
+.contact .info svg {
+    vertical-align: middle;
+    margin-right: 8px;
+    color: #0073e6;
+}
+
+.gmap {
+    flex: 1 1 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.gmap .map {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.data {
+    padding: 8px 0;
+}
+  
+.gmap .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+  
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact, .gmap {
+      flex: 1 1 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #213555;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  form textarea,
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+form textarea {
+    min-height: 150px;
+    resize: none;
+    background-color: #F8FAFC;
+}
+  
+form textarea::placeholder,
+form input::placeholder {
+    color: #000;
+    font-style: italic;
+}
+  
+.btn {
+    display: flex;
+    justify-content: center;
+}
+form button {
+    width: 30%;
+    padding: 12px 10px;
+    background-color: #005bb5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+  
+form button:hover {
+    background-color: rgb(176, 53, 53);
+}
+  
+
+form input:required,
+form textarea:required {
+    border-color: #ccc;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+  
+
+@media (max-width: 768px) {
+    form {
+      padding: 15px;
+    }
+  
+    form input,
+    form textarea,
+    form button {
+      font-size: 14px;
+    }
+}
+  
+#error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#login{
+    color: white;
+    text-align: center;
+    margin-left: 20vw;
+    margin-bottom: 20px;
+}
+label {
+    color: white;
+    text-transform: uppercase;
+}
+#container {
+    margin-bottom: 40px;
+}
+
+#account {
+    background-image: url('//www.georgian.travel/wp-content/uploads/2019/03/slden2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+form {
+    background-color: transparent;
+    border: 2px solid #ccc;
+}
