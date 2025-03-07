@@ -10,7 +10,6 @@ const Navbar = () => {
             <h2>IT'S TIME TO TRAVEL</h2>
             <ul className='list'>
                 <li><NavLink to="/" className={({isActive})=>isActive? "active-link":"no-active"}>Home</NavLink></li>
-                <li><NavLink to="/About" className={({isActive})=>isActive? "active-link":"no-active"}>About</NavLink></li>
                 <li><NavLink to="/Support" className={({isActive})=>isActive? "active-link":"no-active"}>Support</NavLink></li>
                 <li><NavLink to="/blog" className={({isActive})=>isActive? "active-link":"no-active"}>Blog</NavLink></li>
                 <li><NavLink to="/services" className={({isActive})=>isActive? "active-link":"no-active"}>Services</NavLink></li>
